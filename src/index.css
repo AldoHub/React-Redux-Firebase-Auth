@@ -1,14 +1,166 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  padding: 0px;
+  margin: 0px;
+  background: rgb(22, 22, 22);
+  color: #fff;
+  font-family: Rubik;
+}
+.container{
+  width: 75%;
+  background: #111;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 3px 13px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 13px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 13px -5px rgba(0,0,0,0.75);
+
+}
+main {
+  color: #fff;
+  padding-bottom: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  padding: 10px 0px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+nav ul:last-of-type {
+  text-align: right;
+  margin: 0px 0px 0px auto;
+
+}
+nav ul:last-of-type li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+header div {
+  text-align: right;
+  width: 40%;
+  margin: 0px 0px 0px auto;
+  padding-right: 20px;
+  
+}
+
+header div h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+header img {
+  position: absolute;
+  width: 100%;
+  top: -80px;
+  z-index: 1;
+  left: -120px;
+  min-width: 1000px;
+
+}
+
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+form * {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  padding: 10px 0px;
+  border: none;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #eee;
+  background: none;
+  border-bottom: 1px solid rgb(51, 36, 94);
+ 
+}
+
+form label{
+  color: #888;
+} 
+
+form input[type="submit"]{
+  border: none;
+  color: #fff;
+  background: #7F00FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 40%;
+  min-width: 120px;
+  margin: 0px 0px 0px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 12px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 12px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 12px -8px rgba(0,0,0,0.75);
+  text-align: center;
+  
+}
+
+form textarea{
+  border-radius: 2px;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  text-indent: 10px;
+  height: 200px;
+  resize: none;
+  background: none;
+  font-family: rubik;
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+.post{
+  margin: 20px 0px;
+  color: #ddd;
+  padding-left: 20px;
+  border-bottom:1px solid #222;
+}
+
+.post h3 {
+  font-size: 1.7rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type="submit"].login {
+  background: #bc4e9c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.logout {
+  background: none;
+  border: none;
+  font-family: rubik;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: rgb(110, 78, 199)
 }
